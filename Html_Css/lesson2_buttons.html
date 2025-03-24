@@ -1,0 +1,51 @@
+<style>
+    .sub{ /*css selector*/
+        background-color: rgb(201, 6, 6); /*max value is 255
+        if all colors are set to 255 then its white and if 0 then black*/
+        color: white;
+        border: none;
+        height: 35px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 10px; /*adds space around element*/
+    }
+
+    .sub:hover{
+        opacity:50%;
+    }
+
+    .join{
+        background-color: white;
+        color: rgb(12, 144, 231);
+        border-color: rgb(12, 144, 231);
+        border-style: solid; /*before this had a weird type of like left and top
+        had some other blue and right and bottom some other, to fix that we do this*/
+        border-radius: 2px; /*values are in px*/
+        border-width: 2px;
+        height: 35px;
+        width: 60px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .tweet{
+        background-color:  rgb(12, 144, 231);
+        color: white;
+        font-weight: bold;
+        height: 35px;
+        width: 85px;
+        border: none;
+        border-radius: 18px; /*for this we take the lower of height and width nad set it to half of that */
+        font-size: 18px; 
+        cursor: pointer;
+    }
+
+</style>
+
+<button class="sub">SUBSCRIBE</button> <!--accessed with .button-->
+
+<button class="join">JOIN</button>
+
+<button class="tweet">Tweet</button>
