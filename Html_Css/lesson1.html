@@ -8,7 +8,18 @@
         font-weight: bold;
         border-radius: 18px;
         margin-right: 5px;
+        transition: background-color 0.15s;
+        cursor: pointer;
+        vertical-align: top; 
+        /* all teh buttons are text based aligned so we use this coz previously websites were tex based */
     }
+    .b1:hover{
+        background-color:  rgb(222, 187, 11);
+    }
+    .b1:active{
+        opacity: 0.6;
+    }
+
     .b2{
         color: black;
         background-color: rgb(255, 164, 28);
@@ -17,6 +28,21 @@
         font-weight: bold;
         border: none;
         border-radius: 18px;
+        transition: background-color 0.15s;
+        cursor: pointer;
+    }
+    .b2:hover{
+        background-color: rgb(214, 134, 14);
+    }
+    .b2:active{
+        opacity: 0.6;
+    }
+
+    .linktoamazon{
+        color:green;
+    }
+    .linktoamazon:hover{
+        color: orange;
     }
 </style>
 
@@ -28,10 +54,14 @@
 <a href="https://www.google.com" target="_blank">Search with google</a>
 <hr />
 <br />
-<a href="http://www.amazon.in" target="_blank">Back to Amazon</a>
-<p>Nike Black Running shoes <br /> <span style= "color: rgb(0,118,0);" >$39- in stock </span> <br /> Free delivery tomorrow</p>
+<a href="http://www.amazon.in" target="_blank" class="linktoamazon">Back to Amazon</a>
+<p>Nike Black Running shoes <br /> <span style= "color: rgb(0,118,0); transition: color 0.15s;" >$39- in stock </span> <br /> Free delivery tomorrow</p>
 
 <!-- Inline css
 <tag style="property1: value1; property2: value2;">Content</tag>-->
 <button class="b1">Add to Cart</button>
 <button class="b2">Buy now</button>
+
+<!--when a button have dynamic texts inside it dont specify the height width instread add  padding
+the default padding is  1px at top and bottom and 6px left and right
+-->

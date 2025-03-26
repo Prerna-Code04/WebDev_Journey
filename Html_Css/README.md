@@ -10,3 +10,9 @@ git remote add origin <repo-url> – Links your local repo to GitHub.
 git branch -M main – Renames the branch to main (standard practice).
 
 git push -u origin main – Uploads your code to GitHub and sets origin main as the default upstream.
+
+#another thing
+margin is space around element
+padding: inside element
+
+###########1:17:25do those exercise
