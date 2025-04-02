@@ -36,3 +36,5 @@ we have three elements:
     we use display to switch between these 
 
 if elemnt is is display block then center nahi chalega, div me daaloa nd venter kardo!
+
+font weifht: regular 400, medium 500, bold 700

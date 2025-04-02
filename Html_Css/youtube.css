@@ -1,11 +1,45 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .thumbnail{
     width: 300px;
+    display: block;
 }
 .search-box{
     display: block;
+}
+.video-title{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
 }
 .video-preview{
     width: 300px;
     display: inline-block;
     vertical-align: top;
+}
+.channel-pic{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+} 
+.channel-pic img{
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.video-info{
+    display: inline-block;
+    width: 200px;
+}
+.video-author, .video-stats{
+    color: gray;
+    font-weight: 12px;
+}
+.video-author{
+    margin-bottom: 4px;
 }
