@@ -1,5 +1,5 @@
 *{
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
     margin-left: 4px;
 }
@@ -10,4 +10,174 @@
     border-style: solid;
     border-radius: 4px;
     padding-left: 4px;
+}
+
+.para-with-btn p{
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.para-with-btn button{
+    padding: 4px;
+}
+
+.google div{
+    text-align: center;
+}
+.google img{
+    margin-bottom: 10px;
+    width: 200px;
+}
+.google input{
+    font-size: 15px;
+    width: 500px;
+    padding: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+}
+.google button{
+    margin-top: 20px;
+    margin-right: 4px;
+    padding: 4px;
+    background-color: lightgray;
+    border: none;
+
+}
+
+.signup{
+    /* border-color: black;
+    background-color: beige; */
+    width: 230px;
+}
+.first-t{
+    margin: 2px;
+    display: inline;
+    border-radius: 10px;
+    padding: 4px;
+    padding-right: 0px;
+    border-style: solid;
+    border-width: thin;
+    width: 100px;
+    
+}
+#second-t{
+    margin: 2px;
+    display: block;
+    border-radius: 10px;
+    padding: 4px;
+    padding-left: 4px;
+    border-style: solid;
+    border-width: thin;
+    width: 211px;
+}
+.signup button{
+    display: block;
+    background-color: rgb(36, 101, 232);
+    color: white;
+    border: none;
+    padding: 8px 89px;
+    border-radius: 10px;
+    margin-top: 4px;
+}
+
+#uber p{
+    font-family: arial;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#uber input{
+    display: block;
+    margin-bottom: 4px;
+    background-color: rgb(212, 210, 210);
+    border: none;
+    padding: 5px;
+    width: 250px;
+    font-size: 10px;
+}
+.req{
+    margin-top: 8px;
+    background-color: black;
+    color: white;
+    padding: 6px 4px;
+    border: none;
+    font-size: 10px;
+}
+.sch{
+    margin-top: 8px;
+    background-color:rgb(212, 210, 210);
+    color: black;
+    padding: 6px 4px;
+    border: none;
+    font-size: 10px;
+}
+
+/* new chapter!! */
+.redsq{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.greencir{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.service{
+    margin-top: 4px;
+    border-color: black;
+    border-style: solid;
+    width: 300px;
+    padding: 7px;
+}
+.service p{
+    font-family: arial;
+}
+.service button{
+    margin-top: 8px;
+    padding: 4px;
+}
+
+.yt{
+    background-color: black;
+    font-family: arial;
+    padding: 20px;
+    width: 370px;
+}
+.heading{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+.content{
+    color: lightgray;
+}
+
+.profile{
+    background-color: beige;
+    width: 150px;
+    display: inline-block;
+}
+.profile img{
+    width: 150px;
+    margin-left: 0;
+}
+.name{
+    font-weight: bold;
+}
+.friends{
+    color: gray;
+    font-size: smaller;
+}
+.profile button{
+    margin-top: 6px;
+    color: white;
+    background-color: rgb(0, 123, 255);
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 8px;
 }

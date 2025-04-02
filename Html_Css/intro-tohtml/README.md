@@ -15,10 +15,6 @@ git push -u origin main – Uploads your code to GitHub and sets origin main as 
 margin is space around element
 padding: inside element
 
-#########2:34:44
-##########2:46:41
-
-
 html entity is for special characters
 css-specificity, there is a priority stuling is done, it depends on selector the one whihc is more specific has more priority
 
@@ -28,9 +24,9 @@ texte lement, just modiies a part of text like u and strong, span
 
 when saving the text then ahve to reload the page, to avoid this the code should be in html strcutre.
 
-when we set the width of image the height also changes to keep teh saem shape of image
+when we set the width of image1 the height also changes to keep teh saem shape of image1
 
-object-fit to cover the whole image in some constraint dimensions, similarly we have object-position
+object-fit to cover the whole image1 in some constraint dimensions, similarly we have object-position
 
 we have three elements:
     black element: takes whole line
@@ -38,3 +34,5 @@ we have three elements:
     inline element, like strong
     
     we use display to switch between these 
+
+if elemnt is is display block then center nahi chalega, div me daaloa nd venter kardo!

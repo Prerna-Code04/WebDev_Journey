@@ -72,9 +72,9 @@
 .tweet{
     width: 600px;
     height: 80px;
-    border-color: black;
-    border-style: solid;
     margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 .tweet img{
     vertical-align: middle;
@@ -98,4 +98,5 @@
     border: none;
     border-radius: 16px;
     padding: 8px 16px;
+    
 }
