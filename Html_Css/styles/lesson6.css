@@ -1,0 +1,13 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    margin-left: 4px;
+}
+.textbox input{
+    display: block;
+    margin-bottom: 4px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 4px;
+    padding-left: 4px;
+}

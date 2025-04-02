@@ -1,0 +1,11 @@
+.thumbnail{
+    width: 300px;
+}
+.search-box{
+    display: block;
+}
+.video-preview{
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}

@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+}
+.txt{
+    background-color: black;
+    color: white;
+    margin-bottom: 4px;
+    font-family: "Roboto", sans-serif;
+}
+.trial{
+    margin: 10px;
+    width:300px;
+    height:300px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    object-fit: contain;
+    object-position: bottom;
+    
+
+    /* object-fit: cover;
+    object-position: right; */
+}
+
+/* div1 pagination */
+.pagination-para{
+    display: inline;
+}
+.pagination-para li{
+    display: inline;
+    color: purple;
+    text-decoration: underline;
+}
+
+.pagination{
+    margin: 2px 3px;
+    background-color: lightgray;
+    padding: 8px 8px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* stretching */
+.stretching{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 2px;
+    transition: padding 0.5s;
+}
+.stretching:hover{
+    padding: 16px 32px;
+}
+
+.shadowing{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 8px;
+}
+.shadowing:active{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5); /*right position, down position, blur color*/
+}
+
+.three-b button{
+    background-color: green;
+    color: white;
+    padding: 4px 8px;
+    font-size: 15px;
+    border: none;
+    transition: padding 0.5s;
+}
+.three-b button:hover{
+    cursor: pointer;
+    padding:4px 16px;
+}
+/* new chapter */
+.fstfont{
+    font-family: Tahoma;
+}
+
+.sndfont{
+    font-family: arial;
+    font-size: 20px;
+    
+}
+#inside{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+    display: block;
+}
+
+.umm{
+    font-family: Verdana;
+    padding-right: 500px;
+    margin-left: 2px;
+}
+.umm span{
+    color: gray;
+}
+.umm button{
+    color: white;
+    background-color: green;
+    padding: 4px 16px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.umm2{
+    font-family: arial;
+    text-align: center;
+    line-height: 35px;
+    width: 300px;
+}
+.umm2 span, .umm2 p{
+    font-size: 14px;
+}
+.umm2 span{
+    color: rgb(116, 116, 232);
+}
+
+.damn{
+    font-family: arial;
+    width: 300px;
+    text-align: center;
+    line-height: 25px;
+}
+#damn-one{
+    color: red;
+    font-size: 12px;
+}
+.damn button{
+    /* display: block; */
+    color: white;
+    background-color: rgb(60, 122, 247);
+    border: none;
+    border-radius: 44px;
+    padding:10px 15px;
+}
+
+.damn2{
+    font-family: arial;
+}
+.chotu{
+    color:gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+#damn2-hmph{
+    color: green;
+    font-size: 15px;
+}
+.chotu span{
+    color: red;
+}
+
+.damn3{
+    font-family: arial;
+    width: 500px;
+}
+.damn3 h4 span{
+    color: gray;
+    font-weight: 400;
+}
+.damn3 p span{
+    color: rgb(36, 87, 254);
+}

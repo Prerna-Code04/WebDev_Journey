@@ -1,20 +1,18 @@
 <style>
-    *{
-        margin:0;
-        margin-left:2px;
-        padding:0;
-    }
     .video-title{
         font-family: arial; /*default is times new roman*/
-        font-size: 15px;
+        font-size: 20px;
         font-weight: bold;
         text-align: left;
-        margin-bottom: 7px;
+        line-height: 24px;
+        margin-top: 0px;
+        margin-bottom: 0;
     }
     .video-content{
+        margin-top: 2px;
         font-family: arial; 
-        font-size: 10px;
-        color: gray;
+        font-size: 14px;
+        color:rgb(96, 96, 96);
     }
     .logo{
         margin-top: 15px;
@@ -22,16 +20,44 @@
         height:20px;
         width: 20px;
     }
+    .inside-content{
+        line-height: 22px;
+    }
+
+    .apple-img{
+        width: 25px;
+        height: 30px;
+    }
+    .last{
+        font-family: Arial;
+        color:white;
+        background-color: red;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .word:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 </style>
 <img class= "logo" src="data:image/jpeg;base64,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"
     alt="yt logo">
 <p class="video-title">Talking Tech and AI with Google <br /> CEO Sundar Pichai!</p>
 <pre class="video-content">
-    3.4M views · 6 months ago
+3.4M views · 6 months ago
 
-    Marques Brownlee ✓
-    
-    Talking tech and AI on the heels of Google 
-    I/O. Also a daily driver phone reveal from
-    Google's CEO. Shoutout to Sundar!
+Marques Brownlee ✓
+<span class="inside-content">   
+Talking tech and AI on the heels of Google 
+I/O. Also a daily driver phone reveal from
+Google's CEO. Shoutout to Sundar!
+</span> 
 </pre>
+<br />
+<img class="apple-img" src="data:image/png;base64,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"
+alt= "apple logo">
+<p class="last">
+    Shop early fro best selection of holiday favs. <span class="word">Shop now  &#62;</span>
+</p>
