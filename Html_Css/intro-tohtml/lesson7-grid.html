@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS grid</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: grid;
+        grid-template-columns:  100px 100px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: pink;"> div2
+            <p>text</p>
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: grid;
+        grid-template-columns:  100px 100px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: pink;"> div2
+            <p>text</p>
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: grid;
+        grid-template-columns:  100px 100px 100px;">
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: pink;"> div2
+            <p>text</p>
+        </div>
+        <div style="background-color: green;">div1</div>
+        <div style="background-color: lightblue;">div1</div> 
+        <!-- this wraps around and cerate new rows -->
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: grid;
+        grid-template-columns:  100px 1fr;"> <!--free space, takes the whole space free-->
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: pink;"> div2
+        </div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: grid;
+        grid-template-columns:  100px 1fr 2fr;"> <!--free space, takes the whole space free, divides the amount of free spcace, more like a ratio!-->
+        <div style="background-color: lightblue;">div1</div>
+        <div style="background-color: pink;"> div2
+        </div>
+        <div style="background-color: lightblue;">div1</div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+        display: grid;
+        grid-template-columns:  1fr 1fr 1fr; height: 200px;
+        column-gap: 20px;
+        row-gap:  20px;"
+        
+        > <!--free space, takes the whole space free, divides the amount of free spcace, more like a ratio!-->
+        <div style="background-color: lightblue; height: 200px;">div1</div>
+        <div style="background-color: pink;"> div2
+        </div>
+        <div style="background-color: lightblue; height: 200px;">div1</div>
+        <div style="background-color: pink;"> div2
+        </div>
+        <div style="background-color: lightblue; height: 200px;">div1</div>
+        <div style="background-color: pink;"> div2
+        </div>
+    </div>
+</body>
+</html>

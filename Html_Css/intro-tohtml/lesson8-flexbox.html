@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox</title>
+</head>
+<body style="padding-bottom: 100px;">
+    <div style=
+    "display: flex;
+    flex-direction: row;"> 
+    <!-- they take space as much asthey have to, behaving as inline elment -->
+        <div style=
+        "background-color: orange;"
+        >div1 text</div>  
+        <div style=
+        "background-color: lightgreen;">div2
+        <p>text</p>
+        </div>
+    </div>
+    <div style=
+    "
+    margin-top:30px;
+    display: flex;
+    flex-direction: row;"> 
+    <!-- they take space as much asthey have to, behaving as inline elment -->
+        <div style=
+        "background-color: orange;
+        width: 100px;"
+        >100px</div>
+        <div style=
+        "background-color: lightgreen;
+        flex:1;">div2
+        <!-- takes whole width buddy -->
+        <p>text</p>
+        </div>
+    </div>
+
+    <div style=
+    "margin-top:30px;
+    display: flex;
+    flex-direction: row;"> 
+    <!-- they take space as much asthey have to, behaving as inline elment -->
+        <div style=
+        "background-color: orange;
+        width: 100px;"
+        >100px</div>
+        <div style=
+        "background-color: lightgreen;
+        flex:1;">div2
+        <!-- takes whole width buddy -->
+        </div>
+        <div style=
+        "background-color: orange;
+        flex: 5;">
+        <!--ratio wala system hai yaha par!-->
+        100px</div>
+    </div>
+
+    
+    <div style=
+    "margin-top:30px;
+    display: flex;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    flex-direction: row;
+    justify-content: center;">
+    <!-- used to ahve all the dabbas in beg end or middle
+      they take space as much asthey have to, behaving as inline elment -->
+        <div style=
+        "background-color: orange;
+        width: 100px;"
+        >100px</div>
+        <div style=
+        "background-color: lightgreen;
+        width: 100px;">div2
+        <!-- takes whole width buddy -->
+        </div>
+        <div style=
+        "background-color: orange;
+        width: 100px;">
+        <!--ratio wala system hai yaha par!-->
+        100px</div>
+    </div>
+
+    <div style=
+    "margin-top:30px;
+    display: flex;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: stretch; vertical space!*/
+    align-items: start;"> 
+    <!-- used to ahve all the dabbas in beg end or middle
+      they take space as much asthey have to, behaving as inline elment -->
+        <div style=
+        "background-color: orange;
+        width: 100px;"
+        >100px</div>
+        <div style=
+        "background-color: lightgreen;
+        width: 100px;">div2
+        <!-- takes whole width buddy -->
+        </div>
+        <div style=
+        "background-color: orange;
+        width: 100px;">
+        <!--ratio wala system hai yaha par!-->
+        100px</div>
+    </div>
+</body>
+</html>

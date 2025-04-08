@@ -38,3 +38,15 @@ we have three elements:
 if elemnt is is display block then center nahi chalega, div me daaloa nd venter kardo!
 
 font weifht: regular 400, medium 500, bold 700
+
+readme helps to have aligned horizontal layouts
+in grid, its basically like rows and columns and no sapce between the elements and takes only space as much as the column has to
+we have alignment here
+
+#####3:43:44 exerciseeeeeeeee
+####4:15:09
+
+flexbox is same as cs grid but flexbox is more flexible
+grid me arent wale se space and adecide hoti h lekin flex me particular div pe hoti h, wehn we focus on content size
+if bhaar k div is flexbox, andar ka div flexbox nahi hota
+qflex-direction: row is default
