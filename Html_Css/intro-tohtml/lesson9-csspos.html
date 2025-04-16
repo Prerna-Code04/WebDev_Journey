@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Position</title>
+</head>
+<body style="height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;">
+    <!-- to not overide the content below the div -->
+    <div style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        z-index: 1;">
+        <!-- if z-index:1 it tels that this proeproty will override the above, default value is 0, the one having higher value be shown above -->
+         <!-- top: 10px;
+        left: 50px;
+        right: 50px;
+        bottom: 100px;
+        
+        it stikcs to the top of image like here the element is: */ -->
+        header</div>
+
+    <div style="
+        background-color: green;
+        color: white;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        width: 72px;
+    ">
+    sidebar
+        <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        top: 0;
+        right: 0;
+        ">X</div>
+        <!-- positioned with teh respect to the position: fixed -->
+    </div>
+
+    <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 40px;
+    right: 10px;
+    ">absoulte</div>
+
+    <div style="
+        background-color: lightsalmon;
+        height: 200px;
+        width: 200px;
+        ">div1</div>
+        <!-- margin-top: 60px; not the best approach to since if our div changes then wont work like div1 is with div2 -->
+    <div style="
+        background-color: beige;
+        height: 200px;
+        width: 200px;
+        position: relative;">div2
+        
+    
+        <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px;
+        ">5:00</div>
+        <!-- when abolute is inside relative, the second one will positioned on the parent not the page and teh div1 is div2 is displayed normally zaser -->
+    </div>
+</body>
+</html>

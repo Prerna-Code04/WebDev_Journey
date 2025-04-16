@@ -45,8 +45,27 @@ we have alignment here
 
 #####3:43:44 exerciseeeeeeeee
 ####4:15:09
+#########4:44:25
+####5:07:02
+####5:33:35
+########6:07:33
+######6:30:03
 
 flexbox is same as cs grid but flexbox is more flexible
 grid me arent wale se space and adecide hoti h lekin flex me particular div pe hoti h, wehn we focus on content size
 if bhaar k div is flexbox, andar ka div flexbox nahi hota
 qflex-direction: row is default
+   flex-shrink: 0;
+    /* dont shiink */
+
+position: static is default its like nothing written
+posiition: fixed is like placed in the browser window
+position: absolute positions on the page which moves when we scroll
+4:57:08
+
+justify contnet: horizontal me and align-items vertical me, when flex is row when flex is column ult ahojat ah
+
+responsive design:: media query
+inheritance works with text properties not like border nd margins tuff.
+css specificity
+semantic elements: header,main, section nav element they have special meaning to screen readers a bot reading an dall, SEO
