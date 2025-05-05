@@ -1,81 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bools and if-else</title>
+    <title>Bool_ifElse</title>
 </head>
 <body>
-    <!-- let age= 10;
-    if(age> 16){
-        console.log('u can drive');
-    }else{
-        console.log('u cant drive');
-    } -->
-        
-    <p>Rock Paper Scissors</p>
-    <button onclick="
-         playGame('rock');
-    " >Rock</button>
-
-    <button onclick="
-       playGame('paper');
-    ">Paper</button>
-
-    <button onclick="
-        playGame('scissors')
-    " >Scissors</button>
     <script>
-        //global variable!!!! if defined outside scope
+        let hour= '2';
+        let name='Prerna';
 
-       function chooseMove() {
-            let compMove= '';
-            const randNum= Math.random();
-                if(randNum>= 0 && randNum<1/3){ 
-                    compMove= 'rock'; 
-                }else if(randNum>=1/3 && randNum<2/3){
-                    compMove= 'paper';
-                }else if(randNum>=2/3 && randNum<1){
-                    compMove= 'scissors';   
-                }
-            return compMove;
-       }
-
-       function playGame(playerMove){
-            const compMove= chooseMove();
-            let result='';
-
-            if(playerMove==='scissors'){
-                if(compMove==='scissors'){
-                result='Tie';
-            }else if(compMove==='rock'){
-                result= ' YOU lose';
-            }else if(compMove==='paper'){
-                result=' YOU win';
-            }
+        if(hour>=6 && hour<=12){
+            console.log('Good Morning! '+name);
         }
-        
-            else if(playerMove==='paper'){
-                if(compMove==='paper'){
-                result='Tie';
-            }else if(compMove==='scissors'){
-                result= ' YOU lose';
-            }else if(compMove==='rock'){
-                result=' YOU win';
-            }
+        else if(hour>=13 && hour<=17){
+            console.log('Good Afternoon! '+name);
         }
-        
-        else if(playerMove==='rock'){    
-            if(compMove==='rock'){
-                result='Tie';
-            }else if(compMove==='paper'){
-                result= ' YOU lose';
-            }else if(compMove==='scissors'){
-                result=' YOU win';
-            }
+        else{
+            console.log('Good Night '+name);  
+        }
+        //if i have var here i can access before using it, but if tis let then cant! like vasically empty name and all.
+
+        // *************************
+        let age= 6;
+        const isHoliday= true;
+        if(isHoliday===false && age<=6 || age>=65){
+            console.log('Discount');
+        }else{
+            console.log('No Discount');
         }
 
-        alert(`You picked ${playerMove}. Comp picked ${compMove} !!!!!!!!!!!!!!!!!! ${result}`);
-      
-       }
+        // *************************
+        const randomNum= Math.random();
+        let guess= 'Heads';
+        if(randomNum<0.5){
+            // console.log('Heads');
+            let result= 'Heads';
+            result===guess?console.log(result+guess+'win'):console.log(result+guess+'lose');
+        }else{
+            // console.log('Tails');
+            let result= 'Tails';
+            result===guess?console.log(result+guess+'win'):console.log(result+guess+'lose');
+        }
     </script>
 </body>
-</html> 
+</html>

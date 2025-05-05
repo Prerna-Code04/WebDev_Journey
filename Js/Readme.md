@@ -11,11 +11,7 @@ computers ahvae  problem with floats when we do 0.1+0.2 it comes out all weird, 
 
 when calculating money go for cents rather than dollars
 
-####43:08
-#####1:07:16
-#####1:50:50
-####2:32:36
-####3:33:48 
+
 ####4:15:15
 
 typeof for knowing the datatype of variable
@@ -66,5 +62,11 @@ guard operator: && shortcut evaluation
 default operator:  if one is true we know it will do!
  const curr= 'eru' || 'usd' pnow curr will have  eru
 
+.toFixed: returns a string!
 
+eval() function converts a stirng into math
+    this is a warning since it has security risk, ahrd to e=debug and slower
+    INSTEAD Use evaluatre from maths.js
+
+    if evl used, its used in code injection (more in one note)
 

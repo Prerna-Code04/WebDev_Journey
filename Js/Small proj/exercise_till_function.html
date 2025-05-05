@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>excerise</title>
+    <style>
+        .yellow-btn{
+            background-color: yellow;
+        }
+        .orange-btn{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p>HTML CSS REVIEW</p>
+    <button>Click</button> <br>
+    <button>Prerna</button><button>Pav Bhaji</button>
+    <p>Hello, World!</p>
+    <p>I am really tired in meeting rn on another laptop doing js exercises! and did dsa and the website part buddy proud of youu</p>
+    <button class="yellow-btn">Add to Cart</button>
+    <button class="orange-btn">Buy now</button>
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <button class="yellow-btn" onclick="alert('Added')">Add to Cart</button>
+    <button class="orange-btn"  
+    onclick="
+    console.log('Loading.....');
+    alert('Purchased')">Buy now</button>
+    <hr>
+    <hr>
+
+    <button onclick="
+    console.log(convertToCelsius(190));
+    ">Convert to celsius</button>
+
+    <button onclick="
+    console.log(convertToFahreneit(38));
+    ">Convert to Fahreniet</button>
+
+    <button onclick="
+    console.log(convertTempDegrees(144,'F'));
+    ">Convert to temperature degrees</button>
+
+    <button onclick="
+    console.log(converToLength(10,'feet','feet'));
+    ">Converting to length</button>
+
+    
+    <script>
+        console.log('Welcome!');
+        let name='Prerna';
+        console.log(`My name is: ${name}`);
+
+        let cost= 5+ 2*3 +9;
+        console.log(`Cost of food: $${cost}`);
+
+        let costAfterTax= cost*0.1;
+        console.log(`Tax(10%): $${costAfterTax}`);
+
+        let totalCost= cost+costAfterTax;
+        console.log(`Total cost: $${totalCost}`);   
+        
+        function greet(name){
+            if(!name){
+                console.log('Hi there!');
+            }else{      
+                console.log('Hello '+name);
+            }
+        }
+        greet();
+
+        function convertToFahreneit(celsius){
+            return (celsius* (9/5)) +32;
+        }
+        function convertToCelsius(faahrenheit){
+            return (faahrenheit-32)*(5/9);
+        }
+        function convertTempDegrees(degrees, unit){
+            if(unit==='F'){
+                return convertToCelsius(degrees);
+            }else{
+                return convertToFahreneit(degrees);
+            }
+        }
+
+        function converToLength(length, from, to){
+            if(from==='km' && to==='miles'){
+                return length/1.6;
+            }
+            else if(from==='miles' && to==='km'){
+                return length*1.6;
+            }
+            else if(from==='miles' && to==='feet'){
+                return length*5280;
+            }
+            else if(from==='feet' && to==='miles'){
+                return length/5280;
+            }
+            else if(from==='km' && to=='feet'){
+                return length*3281;
+            }
+            else if(from==='feet' && to==='km'){
+                return length/3281;
+            }
+            else{
+                return 'Invalid unit: '+from;
+            }
+        }
+    </script>
+</body>
+</html>
