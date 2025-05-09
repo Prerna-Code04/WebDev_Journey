@@ -11,9 +11,6 @@ computers ahvae  problem with floats when we do 0.1+0.2 it comes out all weird, 
 
 when calculating money go for cents rather than dollars
 
-
-####4:15:15
-
 typeof for knowing the datatype of variable
 adding a string and a number is known as type coercion or automatic type conversion, coz the number is converted to string
 
@@ -69,4 +66,16 @@ eval() function converts a stirng into math
     INSTEAD Use evaluatre from maths.js
 
     if evl used, its used in code injection (more in one note)
+
+objects group multiple values together
+
+    null is when we want a value to be empty intentionally
+
+######5:25:30
+########6:38:26
+dom: document object model!
+
+click and keydown are known as events
+onclick and onkeydown are event listeners
+document object shows the web page while window object gives the browser window, the document obejct is inside window object
 

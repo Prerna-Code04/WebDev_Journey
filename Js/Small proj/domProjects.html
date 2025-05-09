@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM PROJ</title>
+</head>
+<body>
+    <div>
+        <p>Youtube  Subsribe button</p>
+        <button 
+        onclick="subscribe();"
+        class="js-sub">Subscribe</button>
+        <!-- if this have spaces then it wont work so we use innertext -->
+    </div>
+
+    <br>
+    <hr>
+
+    <div>
+        <p>Amazon Shipping Calculator <br> Orders under $40= +$10 shipping. <br>Orders over $40= Free shipping.</p>
+
+        <!-- every event listeneer gets an event object -->
+        <input type="text" class="js-cost" placeholder="Cost of order" onkeydown="
+        // console.log(event.key); gives us whtever key we press!
+            handleKeyDowns(event);
+        ">
+        <button class="js-cal" onclick="
+            shipping();
+        ">Calculate</button>
+        <p class="js-result"></p>
+    </div>
+    
+    <script>
+        // String(35) converting the number in string
+        // if a string only contains a number then it will be converted to number '23'-4 but adding works differntly both are strings are here!
+
+        // window.document
+        // window.console
+        // window.alert
+        // thi window is automatically added by js
+
+        function subscribe(){
+            const content= document.querySelector('.js-sub');
+            if(content.innerText==='Subscribe'){
+                content.innerText= 'subscribed';
+            }else{
+                content.innerText='Subscribe'
+            }
+        }
+
+        function handleKeyDowns(event){
+            if(event.key==='Enter'){
+                shipping();
+            }
+        }
+
+        function shipping(){
+            //for input elements, use value property
+            const inputElement= document.querySelector('.js-cost');
+            let cost= Number(inputElement.value); //a string!
+
+            // console.log(inputElement.value);
+
+            if(cost<40){
+                cost= cost+10;
+            }else{
+               cost= cost;
+            }
+
+            document.querySelector('.js-result').innerHTML= `$${cost}`;
+        }
+    </script>
+</body>
+</html>

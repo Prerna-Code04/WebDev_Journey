@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <!-- dom is another built in object -->
+    <button>Hello!</button>
+    <button class="js-Second-btn">Bye</button>
+    <script>
+        // document.body.innerHTML= 'hello';
+        // //document is object then body is its property which refers tot he body element (document.body is the object) and innerHtml is the property of bodyand assigns value.
+        // document.title= 'good job!'
+
+        // //document is linke dto the web page, it also ahs methods. we can have html elments inside js and dom combines js and html, when we do document.body then its converted into a js object this ahs property and methods. 
+        // console.log(document.title);
+        // console.log(document.body);
+
+        // //lets us get any element from the page and put it inside js
+        //this takes only the first button
+       console.log( document.querySelector('button').innerHTML);
+       //every html element has a property innerHTML, HERE BUTTON IS A js object
+       document.querySelector('button').innerHTML= 'voila';
+
+      console.log( document.querySelector('.js-Second-btn')); //using class
+      const btnelement= document.querySelector('.js-Second-btn').innerHTML;
+      console.log(btnelement);
+      
+      
+       
+        
+        
+
+    </script>
+</body>
+</html>

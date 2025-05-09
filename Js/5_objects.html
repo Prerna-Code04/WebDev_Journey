@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Objects</title>
+</head>
+<body>
+    
+    <script>
+        // const profuct= {
+        //     name: 'socks',
+        //     price: 100
+        // };
+        // console.log(profuct); //dotNotation, if we try to access a value that doesnt exist, unefined is returned.
+        // profuct.name= 'shoes';
+        // console.log(profuct.name);
+        // //adding new property
+        // profuct.quantityt= 2;
+        // console.log(profuct.quantityt);
+        // //for deleting any property.
+        // delete profuct.price;
+        
+
+        const prod2= {
+            name: 'skirt',
+            ['delivery-time']: '1 day', //without bramcket its also fine.
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            fun: function f1(){ //methods, fiunction inside object like console.log
+                console.log('i am function inside object damnn');
+            }
+
+        };
+        console.log(prod2['name']); //bracket notation, lets us use props that doesnt work with dot notation like delivery-time, here if we do it susing .notation, it thinks its trying to do math.
+        console.log(prod2.rating.count);
+        console.log(prod2.fun);
+        //if called just like this then whole definition of function is printed.
+        console.log(prod2.fun()); //actual function log statemtn printed the thing its returning.
+        
+        console.log(JSON.stringify(prod2));// function is not here, hence no function supported, type is string
+
+        console.log(JSON.parse(JSON.stringify(prod2))); //converting into js object from json.
+
+        
+
+        /*built in methods:
+            json: javascript object notation
+                    a syntax and everything should be in " "
+                    this syntax is more universal
+                    understood by every prg lang., wehn we send data between comps, we use json
+                    this object helps convert js object to json 
+         and local storage: used to store values more permannelty
+                    vars are temporay if we referesh all vars are gone.
+            
+         
+         console and math
+         */
+
+         console.log('hello'.toUpperCase);
+         //this string also ahve props and methods, js wraps this in special object automatically hence known as AUTO BOXING works with number and values
+
+         //objects are references, obj1 poiting to message
+         const obj1= {
+            message: 'hello'
+         };
+         //this right here doesnt make copy of this message but maeks a reference to the message
+         const obj2= obj1; //copy by reference
+
+         obj1.message= 'good job';
+         console.log(obj2);
+         //cant compare objects direclty
+         const obj3= {
+            message: 'good job'
+         };
+         console.log(obj3===obj1); //compares teh reference, obj3.message
+         console.log(obj1===obj2); //true, coz they are poiitngto same reference!
+
+         //shortcuts
+         const obj4= {
+            message: 'good job',
+            price: 9
+         };
+        //  const message= obj4.message;
+         const {message, price} = obj4; //destructuring and does the same thing as above, takes the message rpop out of this object here message s the variable name and the rpooeryt name.
+         //basically tot ake propeorties ut of an object
+
+         const obj5= {
+            // message: message
+            //if the propoety and variabel anema re same:
+            message, //shorthand prop, deos same thing as above
+            // method: function f1(){
+            //     console.log('method');  
+            // }
+            method(){
+                console.log('method');  
+                //shorthand method does the same thing as above no need for any function name.
+            }
+         };
+         obj5.method();
+         
+         
+         
+
+
+
+
+        
+        
+        
+         
+    </script>
+</body>
+</html> 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bool_ifElse</title>
+    <title>R P S</title>
 </head>
 <body>
     <!-- let age= 10;
@@ -24,9 +24,14 @@
         playGame('scissors')
     " >Scissors</button>
 
+    <p class="js-res"></p>
+    <p class="js-move"></p>
+    <p class="js-score"></p>
+
         <button onclick="
         score.wins=score.loses=score.ties=0;
         localStorage.removeItem(score);
+        updateScore();
         //reset teh score
         "
         >Reset Score</button>
@@ -50,6 +55,8 @@
         
         //global variable!!!! if defined outside scope
 
+      updateScore();
+
        function chooseMove() {
             let compMove= '';
             const randNum= Math.random();
@@ -61,6 +68,10 @@
                     compMove= 'scissors';   
                 }
             return compMove;
+       }
+
+       function updateScore(){
+        document.querySelector('.js-score').innerHTML= ` Wins: ${score.wins}, Loses:${score.loses}, Ties: ${score.ties}`;
        }
 
        function playGame(playerMove){
@@ -110,9 +121,10 @@
 
         localStorage.setItem('score', JSON.stringify(score)); //only string and messge is the name to fetcht he items baad me
 
-        alert(`You picked ${playerMove}. Comp picked ${compMove} !!!!!!!!!!!!!!!!!! ${result}
-        Wins: ${score.wins}, Loses:${score.loses}, Ties: ${score.ties}
-        `);
+       updateScore();
+
+        document.querySelector('.js-res').innerHTML= result;
+        document.querySelector('.js-move').innerHTML= `You ${playerMove}-${compMove} Computer`;
       
        }
     </script>
